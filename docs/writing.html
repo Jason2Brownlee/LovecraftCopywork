@@ -1,0 +1,34 @@
+<body>
+    <header>
+        <h1>Lovecraft Copywork</h1>
+        <button onclick="goBack()">Back</button>
+        <link rel="stylesheet" href="styles.css">
+    </header>
+
+    <main>
+        <h2 id="text-title"></h2>
+
+        <div class="text-container">
+            <button id="prev-snippet" class="nav-button">&#8593;</button>
+            <div id="text-content" class="text-display"></div>
+            <button id="next-snippet" class="nav-button">&#8595;</button>
+        </div>
+
+        <div class="toggle-container">
+            <span id="mode-label-left">Handwriting</span>
+            <label class="switch">
+                <input type="checkbox" id="mode-switch" checked>
+                <span class="slider round"></span>
+            </label>
+            <span id="mode-label-right">Typing</span>
+        </div>
+
+        <div id="typing-mode">
+            <p id="typing-label">Type the text below:</p>
+            <textarea id="typing-input"></textarea>
+        </div>
+    </main>
+
+    <script src="writing.js"></script>
+</body>
+</html>
